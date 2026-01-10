@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { i18n } from '$lib/common/i18n/i18nService';
 	import Button from './Button.svelte';
 	import HLayout from './layouts/HLayout.svelte';
 	import VLayout from './layouts/VLayout.svelte';
@@ -8,23 +7,25 @@
 	interface Props {
 		id: string;
 		href: string;
+		closeMessage: string;
 		confirmationTitle: string;
 		confirmationMessage: string;
 		continueMessage: string;
-		cancelMessage?: string;
+		cancelMessage: string;
 	}
 
 	let {
 		id,
 		href,
+		closeMessage,
 		confirmationTitle,
 		confirmationMessage,
-		continueMessage = i18n('common.continue'),
-		cancelMessage = i18n('common.cancel')
+		continueMessage,
+		cancelMessage
 	}: Props = $props();
 </script>
 
-<Modal {id} title={confirmationTitle}>
+<Modal {id} title={confirmationTitle} {closeMessage}>
 	<VLayout>
 		{confirmationMessage}
 

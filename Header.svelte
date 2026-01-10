@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { i18n } from '$lib/common/i18n/i18nService';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
@@ -9,9 +8,10 @@
 		children?: Snippet;
 		title?: string;
 		logo?: string;
+		toggleNavigationMessage: string;
 	}
 
-	let { start, end, children, title, logo }: Props = $props();
+	let { start, end, children, title, logo, toggleNavigationMessage }: Props = $props();
 	let expanded = $state(false);
 
 	const toggle = () => {
@@ -30,7 +30,7 @@
 		<h1 class="header-title"><a href={resolve('/')}>{title}</a></h1>
 	{/if}
 
-	<button class="header-toggle" title={i18n('common.toggleNavigation')} onclick={toggle}>
+	<button class="header-toggle" title={toggleNavigationMessage} onclick={toggle}>
 		{#if expanded}
 			<i class="ph ph-x"></i>
 		{:else}

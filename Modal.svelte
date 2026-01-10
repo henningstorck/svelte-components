@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { i18n } from '$lib/common/i18n/i18nService';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
 		children: Snippet;
 		id: string;
 		title?: string;
+		closeMessage: string;
 	}
 
-	let { children, id, title }: Props = $props();
+	let { children, id, title, closeMessage }: Props = $props();
 </script>
 
 <dialog class="modal" {id}>
@@ -20,7 +20,7 @@
 				class="modal-close"
 				command="request-close"
 				commandfor={id}
-				aria-label={i18n('common.close')}
+				aria-label={closeMessage}
 			>
 				<i class="ph ph-x"></i>
 			</button>
