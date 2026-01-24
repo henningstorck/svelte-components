@@ -87,6 +87,7 @@
 	:where(.button) {
 		--button-padding: var(--size-2) var(--size-4);
 		--button-padding-link: var(--size-2);
+		--button-padding-icon: var(--size-2);
 		--button-gap: var(--size-2);
 		--button-radius: var(--radius-2);
 	}
@@ -182,7 +183,7 @@
 		}
 
 		&.icon {
-			padding: var(--size-2);
+			padding: var(--button-padding-icon);
 		}
 
 		&:disabled,
