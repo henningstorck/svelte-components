@@ -11,7 +11,15 @@
 		download?: string;
 		command?: string;
 		commandfor?: string;
-		color?: 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'stealthy';
+		color?:
+			| 'primary'
+			| 'secondary'
+			| 'success'
+			| 'danger'
+			| 'warning'
+			| 'info'
+			| 'stealthy'
+			| 'link';
 		outline?: boolean;
 		pill?: boolean;
 		icon?: boolean;
@@ -78,6 +86,7 @@
 <style>
 	:where(.button) {
 		--button-padding: var(--size-2) var(--size-4);
+		--button-padding-link: var(--size-2);
 		--button-gap: var(--size-2);
 		--button-radius: var(--radius-2);
 	}
@@ -144,6 +153,17 @@
 		&.stealthy {
 			--button-bg: var(--surface-1);
 			--button-color: var(--text-1);
+		}
+
+		&.link {
+			--button-bg: transparent;
+			--button-color: var(--primary-bg);
+			padding: var(--button-padding-link);
+
+			&:hover {
+				background-color: transparent;
+				text-decoration: underline;
+			}
 		}
 
 		&.outline {
