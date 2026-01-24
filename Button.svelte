@@ -18,7 +18,7 @@
 			| 'danger'
 			| 'warning'
 			| 'info'
-			| 'stealthy'
+			| 'surface'
 			| 'link';
 		outline?: boolean;
 		pill?: boolean;
@@ -150,7 +150,7 @@
 			--button-color: var(--info-fg);
 		}
 
-		&.stealthy {
+		&.surface {
 			--button-bg: var(--surface-1);
 			--button-color: var(--text-1);
 		}
