@@ -41,11 +41,23 @@
 			return undefined;
 		}
 
+		if (type === 'checkbox' || type === 'radio') {
+			return 'on';
+		}
+
 		if (name && fieldValues && fieldValues()[name] !== undefined) {
 			return fieldValues()[name];
 		}
 
 		return value;
+	});
+
+	let fieldChecked = $derived.by(() => {
+		if (name && fieldValues && fieldValues()[name] !== undefined) {
+			return !!fieldValues()[name];
+		}
+
+		return checked;
 	});
 </script>
 
@@ -69,7 +81,7 @@
 		{required}
 		{disabled}
 		{readonly}
-		bind:checked
+		bind:checked={fieldChecked}
 	/>
 {:else}
 	<input
