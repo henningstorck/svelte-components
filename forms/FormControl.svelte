@@ -98,10 +98,13 @@
 
 	.form-control {
 		padding: var(--form-control-padding);
-		width: 100%;
 		background-color: var(--form-control-bg);
 		border: var(--border-size-2) solid var(--form-control-bg);
 		transition: border-color 0.2s;
+
+		&:not([type='checkbox']):not([type='radio']) {
+			width: 100%;
+		}
 
 		&:focus-visible {
 			outline: none;
