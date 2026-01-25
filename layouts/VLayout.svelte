@@ -32,6 +32,10 @@
 		flex-direction: column;
 		gap: var(--v-layout-gap);
 
+		:global(> div) {
+			width: 100%;
+		}
+
 		&.align-start {
 			align-items: start;
 		}
