@@ -14,7 +14,7 @@
 
 <style>
 	:where(.nav) {
-		--nav-gap-y: var(--size-1);
+		--nav-gap-y: var(--size-3);
 		--nav-gap-x: var(--size-5);
 	}
 
