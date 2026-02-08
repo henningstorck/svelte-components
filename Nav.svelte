@@ -26,7 +26,7 @@
 		:global(a) {
 			color: var(--text-1);
 			text-decoration-color: var(--text-1);
-			font-weight: var(--font-weight-6);
+			font-weight: var(--font-weight-7);
 			font-size: var(--font-size-2);
 		}
 
