@@ -3,7 +3,7 @@
 	import type { FieldValuesContext } from './Form.svelte';
 
 	interface Props {
-		type: string;
+		type?: string;
 		name?: string;
 		id?: string;
 		value?: string | number;
@@ -17,7 +17,7 @@
 	}
 
 	let {
-		type,
+		type = 'text',
 		name,
 		id,
 		value = $bindable(),
