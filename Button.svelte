@@ -48,7 +48,7 @@
 	}: Props = $props();
 </script>
 
-{#if href}
+{#if href && !disabled}
 	<!-- eslint-disable svelte/no-navigation-without-resolve -->
 	<a
 		class="button {color}"
