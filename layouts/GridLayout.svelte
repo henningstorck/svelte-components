@@ -3,19 +3,19 @@
 
 	interface Props {
 		children: Snippet;
+		minWidth?: number;
 	}
 
-	let { children }: Props = $props();
+	let { children, minWidth = 400 }: Props = $props();
 </script>
 
-<div class="grid-layout">
+<div class="grid-layout" style="--grid-layout-min-width: {minWidth}px">
 	{@render children()}
 </div>
 
 <style>
 	:where(.grid-layout) {
 		--grid-layout-gap: var(--size-3);
-		--grid-layout-min-width: 400px;
 	}
 
 	.grid-layout {
