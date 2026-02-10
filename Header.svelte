@@ -65,7 +65,7 @@
 	.header {
 		padding: var(--header-padding);
 		display: grid;
-		gap: var(--header-gap);
+		gap: 0 var(--header-gap);
 		grid-template-areas: 'title start end';
 		grid-template-columns: auto 1fr auto;
 
@@ -131,6 +131,7 @@
 			.header-start,
 			.header-end {
 				display: none;
+				margin-top: var(--header-gap);
 
 				&[aria-expanded='true'] {
 					display: block;
