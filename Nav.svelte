@@ -16,6 +16,7 @@
 	:where(.nav) {
 		--nav-gap-y: var(--size-3);
 		--nav-gap-x: var(--size-5);
+		--nav-item-gap: var(--size-2);
 	}
 
 	.nav {
@@ -28,6 +29,9 @@
 			text-decoration-color: var(--text-1);
 			font-weight: var(--font-weight-7);
 			font-size: var(--font-size-2);
+			display: flex;
+			gap: var(--nav-item-gap);
+			align-items: center;
 		}
 
 		@media (max-width: 1000px) {
