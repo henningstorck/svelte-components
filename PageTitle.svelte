@@ -5,12 +5,18 @@
 		children?: Snippet;
 		title: string;
 		subtitle?: string;
+		align?: 'start' | 'center' | 'end';
 	}
 
-	let { children, title, subtitle }: Props = $props();
+	let { children, title, subtitle, align = 'start' }: Props = $props();
 </script>
 
-<div class="page-title">
+<div
+	class="page-title"
+	class:align-start={align === 'start'}
+	class:align-center={align === 'center'}
+	class:align-end={align === 'end'}
+>
 	<h2 class="page-title-title">{title}</h2>
 
 	{#if subtitle}
@@ -38,6 +44,18 @@
 		grid-template-rows: auto auto;
 		column-gap: var(--page-title-gap);
 		align-items: end;
+
+		&.align-start {
+			text-align: start;
+		}
+
+		&.align-center {
+			text-align: center;
+		}
+
+		&.align-end {
+			text-align: end;
+		}
 
 		.page-title-title {
 			grid-area: title;
