@@ -61,7 +61,7 @@
 />
 
 <style>
-	:where(.form-input) {
+	:where(:root) {
 		--form-input-padding: var(--size-2);
 		--form-input-bg: var(--surface-3);
 		--form-input-border-color-focus: var(--text-1);

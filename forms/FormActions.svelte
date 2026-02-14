@@ -13,7 +13,7 @@
 </div>
 
 <style>
-	:where(.form-actions) {
+	:where(:root) {
 		--form-actions-margin: var(--size-5);
 	}
 

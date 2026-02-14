@@ -13,7 +13,7 @@
 </section>
 
 <style>
-	:where(.section) {
+	:where(:root) {
 		--section-margin: var(--size-9);
 	}
 

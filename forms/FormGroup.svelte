@@ -32,7 +32,7 @@
 </div>
 
 <style>
-	:where(.form-group) {
+	:where(:root) {
 		--form-group-gap: var(--size-1);
 	}
 

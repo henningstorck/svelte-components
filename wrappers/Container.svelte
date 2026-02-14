@@ -14,7 +14,7 @@
 </div>
 
 <style>
-	:where(.container) {
+	:where(:root) {
 		--container-width: 1200px;
 		--container-width-narrow: 800px;
 		--container-width-fluid: 100%;

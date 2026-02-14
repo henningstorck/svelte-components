@@ -34,7 +34,7 @@
 </div>
 
 <style>
-	:where(.status-message) {
+	:where(:root) {
 		--whoopsie-margin: var(--size-9);
 		--whoopsie-gap: var(--size-7);
 	}

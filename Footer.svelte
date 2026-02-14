@@ -30,7 +30,7 @@
 </footer>
 
 <style>
-	:where(.footer) {
+	:where(:root) {
 		--footer-padding: var(--size-5);
 		--footer-gap: var(--size-5);
 	}

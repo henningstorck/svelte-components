@@ -33,7 +33,7 @@
 </dialog>
 
 <style>
-	:where(.modal) {
+	:where(:root) {
 		--modal-margin: var(--size-5);
 		--modal-padding: var(--size-5);
 		--modal-bg: var(--surface-1);

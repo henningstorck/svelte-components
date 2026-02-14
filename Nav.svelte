@@ -13,7 +13,7 @@
 </nav>
 
 <style>
-	:where(.nav) {
+	:where(:root) {
 		--nav-gap-y: var(--size-3);
 		--nav-gap-x: var(--size-5);
 		--nav-item-gap: var(--size-2);

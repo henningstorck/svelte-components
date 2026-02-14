@@ -84,7 +84,7 @@
 {/if}
 
 <style>
-	:where(.button) {
+	:where(:root) {
 		--button-padding: var(--size-2) var(--size-4);
 		--button-padding-link: var(--size-2);
 		--button-padding-icon: var(--size-2);

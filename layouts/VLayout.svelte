@@ -23,7 +23,7 @@
 </div>
 
 <style>
-	:where(.v-layout) {
+	:where(:root) {
 		--v-layout-gap: var(--size-3);
 	}
 

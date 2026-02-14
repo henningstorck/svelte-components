@@ -23,7 +23,7 @@
 </div>
 
 <style>
-	:where(.page-title) {
+	:where(:root) {
 		--page-title-margin: var(--size-9);
 		--page-title-gap: var(--size-5);
 	}

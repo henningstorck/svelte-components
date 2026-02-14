@@ -13,7 +13,7 @@
 </table>
 
 <style>
-	:where(.table) {
+	:where(:root) {
 		--table-padding: var(--size-3) var(--size-5);
 		--table-radius: var(--radius-2);
 		--table-margin: var(--size-7);

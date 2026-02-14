@@ -25,7 +25,7 @@
 </div>
 
 <style>
-	:where(.progress) {
+	:where(:root) {
 		--progress-bg: var(--surface-3);
 		--progress-bar-bg: var(--primary-bg);
 	}

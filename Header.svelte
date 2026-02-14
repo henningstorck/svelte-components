@@ -56,7 +56,7 @@
 </header>
 
 <style>
-	:where(.header) {
+	:where(:root) {
 		--header-padding: var(--size-5);
 		--header-gap: var(--size-7);
 		--header-logo-height: var(--size-10);

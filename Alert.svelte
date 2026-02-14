@@ -30,7 +30,7 @@
 </div>
 
 <style>
-	:where(.alert) {
+	:where(:root) {
 		--alert-margin: var(--size-5);
 		--alert-padding: var(--size-3);
 		--alert-gap: var(--size-3);

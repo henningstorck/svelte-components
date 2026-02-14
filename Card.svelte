@@ -20,7 +20,7 @@
 </div>
 
 <style>
-	:where(.card) {
+	:where(:root) {
 		--card-margin: var(--size-5);
 		--card-padding: var(--size-5);
 		--card-bg: var(--surface-1);

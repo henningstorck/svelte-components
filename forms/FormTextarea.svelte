@@ -38,7 +38,7 @@
 </textarea>
 
 <style>
-	:where(.form-textarea) {
+	:where(:root) {
 		--form-textarea-padding: var(--size-2);
 		--form-textarea-bg: var(--surface-3);
 		--form-textarea-border-color-focus: var(--text-1);

@@ -14,7 +14,7 @@
 </div>
 
 <style>
-	:where(.grid-layout) {
+	:where(:root) {
 		--grid-layout-gap: var(--size-3);
 	}
 

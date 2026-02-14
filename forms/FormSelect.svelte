@@ -40,7 +40,7 @@
 </select>
 
 <style>
-	:where(.form-select) {
+	:where(:root) {
 		--form-select-padding: var(--size-2);
 		--form-select-bg: var(--surface-3);
 		--form-select-border-color-focus: var(--text-1);

@@ -13,7 +13,7 @@
 </nav>
 
 <style>
-	:where(.button-group) {
+	:where(:root) {
 		--button-group-radius: var(--radius-2);
 	}
 

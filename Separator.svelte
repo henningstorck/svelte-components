@@ -9,7 +9,7 @@
 <div class="separator">{title}</div>
 
 <style>
-	:where(.separator) {
+	:where(:root) {
 		--separator-margin: var(--size-5);
 		--separator-fg: var(--surface-4);
 	}

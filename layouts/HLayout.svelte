@@ -23,7 +23,7 @@
 </div>
 
 <style>
-	:where(.h-layout) {
+	:where(:root) {
 		--h-layout-gap: var(--size-3);
 	}
 
