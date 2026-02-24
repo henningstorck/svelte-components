@@ -7,20 +7,10 @@
 	}
 
 	let { children, copyright }: Props = $props();
-
-	const formatCopyright = (copyright?: string) => {
-		copyright = copyright?.replaceAll('(c)', '©');
-		copyright = copyright?.replaceAll('(year)', new Date().getFullYear().toString());
-		copyright = copyright?.replaceAll('<3', '❤️');
-		copyright = copyright?.replaceAll('(dot)', '•');
-		return copyright;
-	};
-
-	let formattedCopyright = $derived(formatCopyright(copyright));
 </script>
 
 <footer class="footer" class:justify-center={!children}>
-	<div class="footer-copyright">{formattedCopyright}</div>
+	<div class="footer-copyright">{copyright}</div>
 
 	{#if children}
 		<div class="footer-content">
