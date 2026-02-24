@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { beforeNavigate } from '$app/navigation';
 	import { resolve } from '$app/paths';
 	import type { Snippet } from 'svelte';
 
@@ -17,6 +18,10 @@
 	const toggle = () => {
 		expanded = !expanded;
 	};
+
+	beforeNavigate(() => {
+		expanded = false;
+	});
 </script>
 
 <header class="header" class:align-baseline={!logo} class:align-center={!!logo}>
