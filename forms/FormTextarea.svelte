@@ -33,9 +33,8 @@
 	});
 </script>
 
-<textarea class="form-textarea" {name} {id} {placeholder} {required} {disabled} {readonly}>
-	{fieldValue}
-</textarea>
+<!-- prettier-ignore -->
+<textarea class="form-textarea" {name} {id} {placeholder} {required} {disabled} {readonly}>{fieldValue}</textarea>
 
 <style>
 	:where(:root) {
