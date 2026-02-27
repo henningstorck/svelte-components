@@ -49,6 +49,7 @@
 		border: var(--border-size-2) solid var(--form-textarea-bg);
 		transition: border-color 0.2s;
 		width: 100%;
+		min-height: var(--size-11);
 
 		&:focus-visible {
 			outline: none;
