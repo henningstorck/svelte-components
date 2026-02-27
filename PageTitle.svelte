@@ -61,6 +61,7 @@
 			grid-area: title;
 			font-size: var(--font-size-6);
 			font-weight: var(--font-weight-8);
+			margin: 0;
 		}
 
 		.page-title-subtitle {

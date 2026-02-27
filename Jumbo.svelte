@@ -51,6 +51,7 @@
 		.title {
 			font-size: var(--font-size-8);
 			font-weight: var(--font-weight-8);
+			margin: 0;
 		}
 
 		.subtitle {

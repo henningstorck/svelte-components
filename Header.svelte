@@ -87,6 +87,7 @@
 			font-weight: var(--font-weight-9);
 			font-size: var(--font-size-4);
 			text-align: left;
+			margin: 0;
 
 			a {
 				color: var(--text-1);
@@ -107,6 +108,8 @@
 		}
 
 		.header-logo {
+			margin: 0;
+
 			img {
 				display: block;
 				height: var(--header-logo-height);
