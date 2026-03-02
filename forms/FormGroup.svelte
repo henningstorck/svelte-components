@@ -23,11 +23,11 @@
 </script>
 
 <div class="form-group">
-	<label class="label" for={labelFor}>{label}</label>
+	<label class="form-group-label" for={labelFor}>{label}</label>
 	{@render children()}
 
 	{#each relevantFieldErrors as fieldError (fieldError)}
-		<div class="errors">{fieldError}</div>
+		<div class="form-group-errors">{fieldError}</div>
 	{/each}
 </div>
 
@@ -42,11 +42,11 @@
 		gap: var(--form-group-gap);
 		width: 100%;
 
-		.label {
+		.form-group-label {
 			font-weight: var(--font-weight-5);
 		}
 
-		.errors {
+		.form-group-errors {
 			color: var(--danger-bg);
 		}
 	}
