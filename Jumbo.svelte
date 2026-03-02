@@ -18,15 +18,15 @@
 	class:align-end={align === 'end'}
 >
 	{#if title}
-		<h2 class="title">{title}</h2>
+		<h2 class="jumbo-title">{title}</h2>
 	{/if}
 
 	{#if subtitle}
-		<div class="subtitle">{subtitle}</div>
+		<div class="jumbo-subtitle">{subtitle}</div>
 	{/if}
 
 	{#if children}
-		<div class="content">
+		<div class="jumbo-content">
 			{@render children()}
 		</div>
 	{/if}
@@ -48,18 +48,18 @@
 			text-align: end;
 		}
 
-		.title {
+		.jumbo-title {
 			font-size: var(--font-size-8);
 			font-weight: var(--font-weight-8);
 			margin: 0;
 		}
 
-		.subtitle {
+		.jumbo-subtitle {
 			font-size: var(--font-size-4);
 			font-weight: var(--font-weight-6);
 		}
 
-		.content {
+		.jumbo-content {
 			margin-top: var(--size-5);
 		}
 	}
