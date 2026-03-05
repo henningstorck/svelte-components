@@ -10,7 +10,7 @@
 	let { children, minWidth = 400, stretch = false }: Props = $props();
 </script>
 
-<div class="grid-layout" style="--grid-layout-min-width: {minWidth}px" class:stretch>
+<div class="grid-layout" style:--grid-layout-min-width="{minWidth}px" class:stretch>
 	{@render children()}
 </div>
 

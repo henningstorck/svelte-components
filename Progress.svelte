@@ -13,7 +13,7 @@
 	<div class="progress">
 		<div
 			class="progress-bar"
-			style="width: {(Math.min(Math.max(value, min), max) / max) * 100}%"
+			style:width="{(Math.min(Math.max(value, min), max) / max) * 100}%"
 		></div>
 	</div>
 

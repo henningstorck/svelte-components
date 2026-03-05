@@ -9,7 +9,7 @@
 	let { title, delay = '0.5s', takesLongerTitle, takesLongerDelay = '8s' }: Props = $props();
 </script>
 
-<div class="loading-indicator" style="--delay: {delay}; --takes-longer-delay: {takesLongerDelay}">
+<div class="loading-indicator" style:--delay={delay} style:--takes-longer-delay={takesLongerDelay}>
 	<div class="spinner"></div>
 	<div class="title">{title}</div>
 	<div class="takes-longer">{takesLongerTitle}</div>

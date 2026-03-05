@@ -9,7 +9,7 @@
 	let { children, color }: Props = $props();
 </script>
 
-<div class="tag" style="--tag-color: {color}">
+<div class="tag" style:--tag-color={color}>
 	{@render children()}
 </div>
 
